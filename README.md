@@ -1,5 +1,5 @@
 This project to demo Rest endpoint calling another remote Rest endpoint and apply some filtering.
-Its uses Spring boot WebFlux
+It uses Spring boot WebFlux
 
 To run the project run:
 mvn install
