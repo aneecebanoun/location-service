@@ -56,7 +56,6 @@ public class LocationServiceController {
 	@RequestMapping(produces = MediaType.APPLICATION_STREAM_JSON_VALUE, path = "/filteredUsersAsync", method = RequestMethod.GET)
 	public Flux<User> filteredUsersAsync() {
 		try {
-			// creating 2 services to allow mocking the remote service
 			Flux<User> usersFromRemoteApi = remoteLocationService.getUsersFromRemoteApiAsync();
 			if (usersFromRemoteApi == null) {
 				throw new LocationException("Remote service error");
