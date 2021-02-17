@@ -79,7 +79,6 @@ class LocationServiceApplicationTests {
 		Mockito.when(remoteLocationService.getUsersFromRemoteApiAsync()).thenReturn(Flux.just(list));
 		ResponseEntity<String> response = restTemplate
 				.getForEntity(new URL(LOCALHOST + port + "/api/v1/location/filteredUsersAsync").toString(), String.class);
-		System.out.println(response.getBody());
 		assertEquals(response.getStatusCode(), HttpStatus.OK);
 	}
 
