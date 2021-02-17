@@ -3,6 +3,7 @@ It uses Spring boot WebFlux
 
 To run the project run:
 >mvn install
+>
 >mvn package
 
 then switch to target directory and run:
